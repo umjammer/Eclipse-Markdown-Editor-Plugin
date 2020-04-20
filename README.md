@@ -3,7 +3,7 @@
 Github Falvored Markdown (includes Table) enabled markdown editor and previewer (in tabbed pane).
 
 This plugin is very ad-hoc build, contribution is welcome.
-This plugin used [flexmark](https://github.com/vsch/flexmark-java) as a rendering engine.
+This plugin uses [flexmark](https://github.com/vsch/flexmark-java) as a rendering engine.
 
 ## Usage
 
