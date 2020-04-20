@@ -1,10 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/annotations-15.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/autolink-0.6.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/commons-logging-1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-abbreviation-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-admonition-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-anchorlink-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-aside-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-attributes-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-autolink-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-definition-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-emoji-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-enumerated-reference-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-escaped-character-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-footnotes-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-gfm-issues-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-gfm-strikethrough-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-gfm-tasklist-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-gfm-users-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-gitlab-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-ins-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-jekyll-front-matter-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-jekyll-tag-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-macros-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-media-tags-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-superscript-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-tables-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-toc-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-typographic-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-wikilink-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-xwiki-macros-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-yaml-front-matter-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-ext-youtube-embedded-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-html2md-converter-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-jira-converter-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-pdf-converter-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-profile-pegdown-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-util-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-util-ast-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-util-builder-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-util-collection-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-util-data-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-util-dependency-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-util-format-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-util-html-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-util-misc-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-util-options-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-util-sequence-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-util-visitor-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-youtrack-converter-0.61.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/fontbox-2.0.16.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/graphics2d-0.24.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/icu4j-59.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/jsoup-1.11.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/openhtmltopdf-core-1.0.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/openhtmltopdf-jsoup-dom-converter-1.0.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/openhtmltopdf-pdfbox-1.0.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/openhtmltopdf-rtl-support-1.0.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/pdfbox-2.0.16.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/xmpbox-2.0.16.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/dependency/flexmark-all-0.61.8.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="lib/markdownj-1.0.2b4-0.3.0.jar"/>
-	<classpathentry kind="lib" path="lib/net.sf.paperclips_1.0.1.jar"/>
-	<classpathentry kind="lib" path="lib/winterwell.utils.jar"/>
-	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="src" path="src/"/>
+	<classpathentry exported="true" kind="lib" path="target/classes" sourcepath="target/classes"/>
+	<classpathentry exported="true" kind="lib" path="lib/winterwell.utils.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/net.sf.paperclips_1.0.1.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -17,7 +17,7 @@ public class ExportHTMLAction extends Action {
 	}
 	@Override
 	public void run() {
-		IEditorPart ed = ActionBarContributor.getActiveEditor();
+		IEditorPart ed = MultiPageEditorContributor.getActiveEditor();
 		if (!(ed instanceof MarkdownEditor)) {
 			return;
 		}

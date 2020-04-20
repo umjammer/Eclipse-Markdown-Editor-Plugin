@@ -36,7 +36,7 @@ public class FormatAction extends Action implements IHandler {
 	@Override
 	public void run() {
 		try {
-			MarkdownEditor ed = (MarkdownEditor) ActionBarContributor.getActiveEditor();
+			MarkdownEditor ed = (MarkdownEditor) MultiPageEditorContributor.getActiveEditor();
 			if (ed == null) return; // The active editor is not a markdown editor.
 			int cols = ed.getPrintColumns();
 			// Do we have a selection?

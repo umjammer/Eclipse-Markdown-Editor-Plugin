@@ -14,5 +14,52 @@
 	<name>Markdown Editor (plugin)</name>
 	<description>Markdown Editor Plugin for Eclipse</description>
 
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-dependency-plugin</artifactId>
+          <version>2.10</version>
+          <executions>
+            <execution>
+              <id>copy-dependencies</id>
+              <phase>initialize</phase>
+              <goals>
+                <goal>copy-dependencies</goal>
+              </goals>
+              <configuration>
+                <includeScope>runtime</includeScope>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <version>2.10</version>
+            <executions>
+                <execution>
+                    <id>copy-dependencies</id>
+                    <phase>initialize</phase>
+                    <goals>
+                        <goal>copy-dependencies</goal>
+                    </goals>
+                    <configuration>
+                        <includeScope>runtime</includeScope>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+     </plugins>
+    </build>
+
+    <dependencies>
+      <dependency>
+        <groupId>com.vladsch.flexmark</groupId>
+        <artifactId>flexmark-all</artifactId>
+        <version>0.61.8</version>
+      </dependency>
+    </dependencies>
+
 </project>
 

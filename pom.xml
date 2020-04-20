@@ -41,7 +41,7 @@
 	</prerequisites>
 
 	<properties>
-		<tycho-version>0.18.1</tycho-version>
+		<tycho-version>1.6.0</tycho-version>
 
 		<!-- PROJECT SETTINGS -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -62,18 +62,11 @@
 	</modules>
 
 	<repositories>
-		<!-- ECLIPSE 3.7 
-		<repository>
-			<id>eclipse-indigo</id>
-			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/indigo</url>
-		</repository>
-		-->
 		<!-- -->
 		<repository>
-			<id>kepler</id>
+			<id>2020-03</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/kepler</url>
+			<url>http://download.eclipse.org/releases/2020-03</url>
 		</repository>
 		 
 	</repositories>
@@ -91,45 +84,18 @@
 				<artifactId>tycho-compiler-plugin</artifactId>
 				<version>${tycho-version}</version>
 				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 
-			<!--
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>${version.compiler}</version>
-				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
-					<encoding>UTF-8</encoding>
-				</configuration>
-			</plugin>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-resources-plugin</artifactId>
-				<version>${version.resources}</version>
-				<configuration>
-					<encoding>UTF-8</encoding>
-				</configuration>
-			</plugin>
-
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>tycho-maven-plugin</artifactId>
-				<version>${version.tycho}</version>
-				<extensions>true</extensions>
-			</plugin>
-			  -->
 			<!--  -->
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>target-platform-configuration</artifactId>
 				<version>${tycho-version}</version>
 				<configuration>
+                    <pomDependencies>consider</pomDependencies> 
 					<environments>
 						<environment>
 							<os>linux</os>

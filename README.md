@@ -1,31 +1,14 @@
 # Eclipse Markdown Editor Plugin
 
-[![Build Status](https://secure.travis-ci.org/winterstein/Eclipse-Markdown-Editor-Plugin.png)](http://travis-ci.org/winterstein/Eclipse-Markdown-Editor-Plugin)
-<a href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=369" 
-title="Drag and drop into a running Eclipse toolbar area to install Markdown Text Editor">
-  <img src="https://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/installbutton.png"/>
-</a>
+Github Falvored Markdown (includes Table) enabled markdown editor and previewer (in tabbed pane).
 
-Edit .md and .txt files with syntax highlighting.   
-Provides Outline and Preview HTML views.
-
-Please see the website for information:
-<http://www.winterwell.com/software/markdown-editor.php>
-
-Eclipse Marketplace entry:
-<http://marketplace.eclipse.org/content/markdown-text-editor>  
-or install with [Nodeclipse CLI Installer](https://github.com/Nodeclipse/nodeclipse-1/tree/master/org.nodeclipse.ui/templates) `nodeclipse install markdown`
-
-There is also a complementary GitHub Flavoured Markdown Viewer
-<https://github.com/satyagraha/gfm_viewer>
-
-For dedicated AsciiDoc (`.adoc`) support, see 
-<https://github.com/de-jcup/eclipse-asciidoctor-editor>
-
+This plugin is very ad-hoc build. Contribution is welcome.
+This plugin used [flexmark](https://github.com/vsch/flexmark-java) as a rendering engine.
 
 ## Usage
 
-![](http://marketplace.eclipse.org/sites/default/files/Markdown-Editor-1.1.0.PNG)
+![](https://lh3.googleusercontent.com/cipDsqoYygTmTExPWsk3lIIzJ-F8GKfz_cm_g_-Gj52cuCdkKSzFzXZulChHauUslG7YHPHj7CEYwKt_j_kw_ZHnGCmX_sWjzHfV7ENGrLwSsoYQ9Sbr9nH4CKjHa1x3wEjlKHmyLaMDejWDQ4ci34J6TUpXRveGb8BgYQZAa0kqlZ728Yieuxtj2ku8vJm-AwlaGClCxvrh8CjNLQKjhDAOB6XwLzVodZoZz7cCom_trpDwnTlgUlzBK9qo-uG-vvv2dOOVjJPAuBClrnzPmmWIj957Mql0dQYXjubb-s0WWFfgWanpM8LFeMZF6bkLoJCeCeGx06EKSGWabLakMUKuorM1zBfwHOxogxJA0fLzcnmAUum9kB2Ko15-7fGW9xgYnSHLYxJzrrrwm8BPbglNr4ZRYiylyOu2BDHOk2mewfCCDyiKO9G2D_JHR4hAu5bVp_iUopofOH30_ekMn-HEBDn5Lh11Pt-BgwrHy728-cOUSMOkAs30ZkM1mvNY4v0vxAMow19mxm9msQ09W2pmFwucKFpwGoxaTlF2AHhB1HJ26aiAhME_HpdWW6DneTwZ-mEMdMgKsaUgcwZ-juCIyMk7PTkNA6Kbe3A0mof-obDTcuuIJpBk6XjaXly5-iGHzhu_BiKqIszp_fkfxAECWg1rHniD97Egdn4u9tbfuM2_l8PYmmGB=w480-h603-no)
+![](https://lh3.googleusercontent.com/C5S90vVLdlVKlv5MhZ3Cw_PUgBfRWM_ERa_Z-k0QhvB3U7lMy6qIhChJ35JN42W7Cu5yGwn-gJ_3U66FoamTlFSDsSB2924FL2pxVwwM5D_GqObnimu-XS-_C9NalidTjDYxHBdB4jQOHTOjp1t30GcMbIQlhLGs_Mo9xOP7-6-V12NEM85gkIsVqIeRg56UNdAgRYP5EX-iEjPA5epreGJUtHrZIo2ST0u4sRgwjHP_fWfi-cjPKuk-H7HnFlsHDZV91QsaDCTOtZiuVT3fyB49wj0wgXE1jFrTUBNLyBxtKF1kPSaRk--Unaye0BGKxQwtYRYQaSWE7hYytfjOXUW5r4ZBOuOe8gnl3qyHC37HwBOWW8-ZLYgNoHd0mU9njOQncPM9XK-dUv3WpfC7PWNKJNvxdzh_-vcLB1cNWrDlLqewKfz8fJQwmYBjMlqpXMO99r_z0yyYf99H0xk_XcyRKWPxife-5HQn36p9x5JR_4IsqRmmlR0Cm52OIyY1Hnybemlntfma6iHPQ21x_94-n1yR4l1dvWvEVlX3WXE29vBmecGsTixcjpH47cxb1KD_x5KJKA7s23ev-UyRSNKbDPf40fU4hXXH_mPBhRZX7R_ngEb9JPDPkw4Xmv99O3q9ZtWiMEuAL-ivWnC5IxdwZJ3Atw4UROuTWjkobWwoXjG70TyyNIAi=w480-h587-no)
 
 Note that for HTML preview OS the internal browser is used, e.g. Internet Explorer on Windows; if you use Ubuntu or other Linux distros, we recommend the WebKit browser; see:
 
@@ -75,4 +58,7 @@ Increase version
   - detecting links #51
   - open GFM View from Markdown View #53
 
-<a href="http://with-eclipse.github.io/" target="_blank"><img alt="with-Eclipse logo" src="http://with-eclipse.github.io/with-eclipse-1.jpg" /></a>
+## TODO
+
+ * clean up code
+ * github flabored css

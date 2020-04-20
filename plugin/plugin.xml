@@ -8,63 +8,17 @@
             name="Markdown Editor"
             extensions="txt,md,mdown,markdown,mdwn"
             icon="icons/notepad.gif"
-            contributorClass="winterwell.markdown.editors.ActionBarContributor"
-            class="winterwell.markdown.editors.MarkdownEditor"
-            id="winterwell.markdown.editors.MarkdownEditor"
+            contributorClass="winterwell.markdown.editors.MultiPageEditorContributor"
+            class="winterwell.markdown.editors.MultiPageEditor"
+            id="winterwell.markdown.editors.MultiPageEditor"
             default="true">
       </editor>
       
-      <editor
-            class="winterwell.markdown.editors.MarkdownEditor"
-            contributorClass="winterwell.markdown.editors.ActionBarContributor"
-            default="true"
-            extensions="litcoffee"
-            icon="icons/coffee.png"
-            id="org.nodeclipse.ui.editors.LitCoffeeEditor"
-            name="LitCoffee (Markdown) Editor">
-      </editor>
       
    </extension>
    
    <extension
-         point="org.eclipse.ui.menus">
-      <menuContribution
-            allPopups="false"
-            locationURI="toolbar:winterwell.markdown.views.MarkdownPreview">
-         <command
-               commandId="winterwell.markdown.commands.OpenGfmView"
-               icon="icons/github-cat_yellow.png"
-               style="push">
-         </command>
-         <command
-               commandId="winterwell.markdown.commands.Preferences"
-               icon="icons/settings16_yellow.png"
-               style="push">
-         </command>
-      </menuContribution>
-      <menuContribution
-            allPopups="false"
-            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
-         <toolbar
-               id="winterwell.markdown.MarkdownEditor">
-            <command
-                  commandId="winterwell.markdown.commands.OpenMdView"
-                  icon="icons/notepad.gif"
-                  style="push">
-               <visibleWhen
-                     checkEnabled="true">
-               </visibleWhen>
-            </command>
-         </toolbar>
-      </menuContribution>
-   </extension>
-   <extension
          point="org.eclipse.ui.commands">
-      <command
-            defaultHandler="winterwell.markdown.commands.OpenGfmView"
-            id="winterwell.markdown.commands.OpenGfmView"
-            name="Open GitHub Flavored Markdown View">
-      </command>
       <command
             id="winterwell.markdown.commands.OpenMdView"
             name="Open Markdown View">
@@ -81,12 +35,6 @@
       <category
             id="winterwell.markdown"
             name="Markdown"/>
-      <view
-            category="winterwell.markdown"
-            class="winterwell.markdown.views.MarkdownPreview"
-            icon="icons/notepad.gif"
-            id="winterwell.markdown.views.MarkdownPreview"
-            name="Markdown View"/>
    </extension>
    <extension
          point="org.eclipse.ui.preferencePages">
