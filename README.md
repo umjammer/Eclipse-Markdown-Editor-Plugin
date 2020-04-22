@@ -62,3 +62,9 @@ Increase version
 
  * clean up code
  * github flavored css
+ * ~~modify main icon 16x16~~
+ * ~~change filename to main tab~~
+   * when the same name and the different project
+ * eliminate gfm checkbox on preferences pane
+ * eliminate markdown view
+ * ~~version~~
