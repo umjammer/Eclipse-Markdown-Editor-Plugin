@@ -230,7 +230,7 @@ public class MarkdownEditor extends TextEditor implements IDocumentListener
 		IFile docFile = getResource(this);
 		// Get existing tasks
 		IMarker[] taskMarkers = docFile.findMarkers(IMarker.TASK, true, IResource.DEPTH_INFINITE);
-		List<IMarker> markers = new ArrayList<IMarker>(Arrays.asList(taskMarkers));
+		List<IMarker> markers = new ArrayList<>(Arrays.asList(taskMarkers));
 //		Collections.sort(markers, c) sort for efficiency
 		// Find tags in doc
 		List<String> text = getMarkdownPage().getText();
@@ -311,7 +311,7 @@ public class MarkdownEditor extends TextEditor implements IDocumentListener
 		return doc2editor.get(doc);
 	}
 
-	private static final Map<IDocument, MarkdownEditor> doc2editor = new HashMap<IDocument, MarkdownEditor>();
+	private static final Map<IDocument, MarkdownEditor> doc2editor = new HashMap<>();
 
 
 	/**
@@ -330,7 +330,7 @@ public class MarkdownEditor extends TextEditor implements IDocumentListener
 	private static final Position[] POSITION_ARRAY = new Position[0];
 	
 	private boolean haveRunFolding = false;
-	private Map<Annotation, Position> oldAnnotations = new HashMap<Annotation, Position>(0);
+	private Map<Annotation, Position> oldAnnotations = new HashMap<>(0);
 
 	/**
 	 * @param region can be null
@@ -343,12 +343,12 @@ public class MarkdownEditor extends TextEditor implements IDocumentListener
 		List<Header> headers = mPage.getHeadings(null);
 		// this will hold the new annotations along
 		// with their corresponding positions
-		Map<Annotation, Position> annotations = new HashMap<Annotation, Position>();
+		Map<Annotation, Position> annotations = new HashMap<>();
 		IDocument doc = getDocument();
 		updateSectionFoldingAnnotations2(doc, headers, annotations, doc.getLength());
 		// Filter existing ones
 		Position[] newValues = annotations.values().toArray(POSITION_ARRAY);		
-		List<Annotation> deletedAnnotations = new ArrayList<Annotation>();
+		List<Annotation> deletedAnnotations = new ArrayList<>();
 		for(Entry<Annotation, Position> ae : oldAnnotations.entrySet()) {
 			Position oldp = ae.getValue();
 			boolean stillExists = false;
