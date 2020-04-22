@@ -55,7 +55,8 @@ public class MultiPageEditor extends MultiPageEditorPart implements IResourceCha
         try {
             editor = new MarkdownEditor();
             int index = addPage(editor, getEditorInput());
-            setPageText(index, editor.getTitle());
+            setPageText(index, "Markdown Source");
+            setPartName(editor.getTitle());
         } catch (PartInitException e) {
             ErrorDialog.openError(getSite().getShell(), "Error creating nested text editor", null, e.getStatus());
         }
