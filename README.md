@@ -68,3 +68,5 @@ Increase version
  * eliminate gfm checkbox on preferences pane
  * eliminate markdown view
  * ~~version~~
+ * got blank when browser back (preview pane)
+ * https://github.com/dschaefer/swt-cef
